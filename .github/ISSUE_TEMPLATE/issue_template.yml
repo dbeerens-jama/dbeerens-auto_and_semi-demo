@@ -26,13 +26,13 @@ body:
       value: "Something happened, that should not have happened!"
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: sync_to_jama
     attributes:
       label: Synchronize with Jama?
       options:
-        - label: No
-        - label: Yes
+        - No
+        - Yes
     validations:
       required: true
   - type: input

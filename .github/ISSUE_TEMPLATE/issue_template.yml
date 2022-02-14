@@ -1,19 +1,19 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
+name: 🐞Issue
+description: File an issue/bug
+title: "[Issue]: "
+labels: ["issue", "triage", "bug"]
 assignees:
   - dbeerens-jama
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this report!
   - type: input
     id: summary
     attributes:
       label: Summary
-      description: What is the TL;DR of this bug?
+      description: What is the TL;DR of this report?
       placeholder: ex. Class ABC is missing signal 123 spec. in latest interface def.
     validations:
       required: true
@@ -23,7 +23,7 @@ body:
       label: What happened?
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "A bug happened!"
+      value: "Something happened, that should not have happened!"
     validations:
       required: true
   - type: checkboxes

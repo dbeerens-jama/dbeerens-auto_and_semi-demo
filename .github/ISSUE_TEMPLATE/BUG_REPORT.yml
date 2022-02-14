@@ -1,0 +1,64 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: What is the TL;DR of this bug?
+      placeholder: ex. Class ABC is missing signal 123 spec. in latest interface def.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: checkboxes
+    id: sync_to_jama
+    attributes:
+      label: Synchronize with Jama?
+      options:
+        - label: No
+        - label: Yes
+    validations:
+      required: true
+  - type: input
+    id: jama_url
+    attributes:
+      label: Jama URL
+      description: The URL of the Jama Item that is being synchronized.
+      placeholder: When synchronization is active for this issue the URL of the Jama Item will appear here.
+      render: shell
+    validations:
+      required: false
+  - type: input
+    id: jama_id
+    attributes:
+      label: Jama ID
+      description: The ID of the Jama Item that is being synchronized.
+      placeholder: When synchronization is active for this issue the ID of the Jama Item will appear here.
+      render: shell 
+    validations:
+      required: false
+  - type: input
+    id: jama_status
+    attributes:
+      label: Jama Status
+      description: The status of the Jama Item that is being synchronized.
+      placeholder: When synchronization is active for this issue the status of the Jama Item will appear here.
+      render: shell
+    validations:
+      required: false

@@ -31,11 +31,9 @@ body:
     attributes:
       label: Priority
       options:
-        - 'Lowest'
         - 'Low'
         - 'Medium'
         - 'High'
-        - 'Highest'
     validations:
       required: true
   - type: dropdown

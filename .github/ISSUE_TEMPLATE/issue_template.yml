@@ -26,6 +26,18 @@ body:
       value: "Something happened, that should not have happened!"
     validations:
       required: true
+ - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - 'Lowest
+        - 'Low'
+        - 'Medium'
+        - 'High'
+        - 'Highest'
+    validations:
+      required: true
   - type: dropdown
     id: sync_to_jama
     attributes:
